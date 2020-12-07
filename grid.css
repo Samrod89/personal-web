@@ -15,8 +15,9 @@
 .icon-none {
     display: none;
 }
-.hide-menu {
-    display:inline-block;
+
+ul {
+    display: flex;
 }
 
 @media(min-width: 768px) {
