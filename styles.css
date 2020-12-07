@@ -51,9 +51,9 @@
 }
 
 ul {
-  /* display: flex; */
   list-style: none;
   margin: 16px 0;
+  display: flex;
 }
 
 .nav ul.hide-menu {
@@ -64,7 +64,7 @@ ul {
   .nav ul.hide-menu {
     display: flex;
   }
-  /* La clase burguer menu se la agregué al enlace que abre/cierra el menú */
+
   .burguer-menu {
     display: none;
   }

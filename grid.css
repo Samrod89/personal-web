@@ -12,13 +12,7 @@
 .col-6 {width: 50%;}
 .col-12 {width: 100%;}
 }
-.icon-none {
-    display: none;
-}
 
-ul {
-    display: flex;
-}
 
 @media(min-width: 768px) {
 
