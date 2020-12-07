@@ -59,6 +59,16 @@ ul {
 .nav ul.hide-menu {
   display: none;
 }
+
+@media(min-width: 768px) {
+  .nav ul.hide-menu {
+    display: flex;
+  }
+  /* La clase burguer menu se la agregué al enlace que abre/cierra el menú */
+  .burguer-menu {
+    display: none;
+  }
+}
 .menu-color {
   color: goldenrod;
   margin-top: 18px;
