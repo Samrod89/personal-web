@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./grid.css">
   <script src="https://kit.fontawesome.com/2eb445372f.js" crossorigin="anonymous"></script>
+  <script src="./menu.js"></script>
   <title>Document</title>
 </head>
 
@@ -15,17 +16,19 @@
     <section>
       <div>
         <nav class="nav">
-          <div class="text position-relative title-2"><i class="fas fa-seedling"></i> SR</div>
-           <div class="margin-menu">
-             <ul>
-              <li><a class="a-menu title-2" href="#"> Blog</a></li>
-              <li><a class="a-menu title-2" href="#"> Contacto</a></li>
-            </ul>
-          </div> 
-       </nav>
+          <div class="text title-2"><i class="fas fa-seedling"></i> SR</div>
+       
+            <a onclick="showMenu()"href="#"> <i class="fas fa-bars icon-none"></i></a>
+            <ul id="menu" class="hide-menu">
+              <li><a class="a-menu title-2 " href="#"> Resume</a></li>
+              <li><a class="a-menu title-2 " href="#"> Skills</a></li>
+              <li><a class="a-menu title-2 " href="#"> Portafolio</a></li>
+            </ul> 
+        
+        </nav>
       </div>
       <div class="main">
-        <div>
+        <div class="image-center">
           <img class="image" src="https://media-exp1.licdn.com/dms/image/C4D03AQE8u82tdRkfmg/profile-displayphoto-shrink_400_400/0/1597972658175?e=1612396800&v=beta&t=q_wFMvTZ2pN4Lf-G8jZDGcfi9_yMZutmwT0GhGMMUew" alt="">
         </div>
         <div>
@@ -35,65 +38,148 @@
           </p>
         </div>
       </div>
-     </section>
+    </section>
   </header>
-    <section>
-      <div class="first-card">
-        <h2 class="text-center title-2">Resume</h2>
-        <hr>
-        <h2 class="title-2 margin-card"> <i class="fas fa-university"></i> Education</h2>
-          <div>
-          <div class="col-12 padding-col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas maiores itaque deleniti velit debitis! Velit voluptatum ducimus quas veritatis soluta temporibus maxime cumque repellat, vel illum reiciendis vitae necessitatibus!</div>
-          <div class="col-12 padding-col"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolorem ab praesentium quisquam dicta assumenda minus ratione ullam, sunt ut esse eveniet exercitationem quibusdam architecto nisi deserunt tempore earum corporis!</div>
-          <h2 class="title-2 margin-card"> <i class="fas fa-award"></i>Experience</h2>
-          <div>
-            <div class="col-12 padding-col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas maiores itaque deleniti velit debitis! Velit voluptatum ducimus quas veritatis soluta temporibus maxime cumque repellat, vel illum reiciendis vitae necessitatibus!</div>
+  <section>
 
-            <div class="col-12 padding-col"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolorem ab praesentium quisquam dicta assumenda minus ratione ullam, sunt ut esse eveniet exercitationem quibusdam architecto nisi deserunt tempore earum corporis!</div>
-
+    <div class="first-card">
+      <h2 class="text-center title-2">Resume</h2>
+      <hr>
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="title-2 margin-card"> <i class="fas fa-university"></i> Education</h2>
+          <div class="row">
+          
+            <div class="col-6 card">
+              <div class="padding-col">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas maiores itaque deleniti velit debitis! Velit voluptatum ducimus quas veritatis soluta temporibus maxime cumque repellat, vel illum reiciendis vitae necessitatibus!</p>
+              </div>
+            </div>
+            
+            <div class="col-6 card">
+              <div class="padding-col">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas maiores itaque deleniti velit debitis! Velit voluptatum ducimus quas veritatis soluta temporibus maxime cumque repellat, vel illum reiciendis vitae necessitatibus!</p>
+              </div>
+            </div>
           </div>
-    </section>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="title-2 margin-card"> <i class="fas fa-award"></i>Experience</h2>
+          <div class="row">
+            <div class="col-6 card">
+              <div class="padding-col">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque volptas maiores itaque deleniti velit debitis! Velit voluptatum ducimus quas veritatis soluta temporibus maxime cumque repellat, vel illum reiciendis vitae necessitatibus!</p>
+              </div>
+            </div>
+            <div class="col-6 card">
+              <div class="padding-col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque volptas maiores itaque deleniti velit debitis! Velit voluptatum ducimus quas veritatis soluta temporibus maxime cumque repellat, vel illum reiciendis vitae necessitatibus!</p>
 
-    <section>
-      <div class="first-card">
-        <h2 class="text-center title-2">Skills</h2>
-        <h2 class="title-3 margin-card"><i class="fas fa-users"></i> Profesional skills</h2>
-        <hr>
+              </div>
+            </div>
+          </div>
 
-        <div class="display-flex-sk"><div class="padding-col rail percentage-rail"> <p>Communication </p></div> <p class="display-flex-sk"> 80%</p></div>
-        <div class="padding-col">Leadership</div>
-        <div class="padding-col">Confidence</div>
-        <hr>
-        <h2 class=" title-3 margin-card"><i class="fas fa-laptop-code"></i> Code skills</h2>
-        <hr>
+        </div>
 
-        <div class="padding-col">HTML</div>
-        <div class="padding-col">Javascript</div>
-        <div class="padding-col">Phyton</div>
+  </section>
 
+  <section>
+    <div class="first-card">
+      <h2 class="text-center title-2">Skills</h2>
+      <h2 class="title-3 margin-card"><i class="fas fa-users"></i> Profesional skills</h2>
+      <hr>
+
+      <div class=" col- display-flex-sk">
+        <div class="padding-col rail percentage-rail1">
+          <p>Communication </p>
+        </div>
+        <p class="display-flex-sk"> 70%</p>
       </div>
-    </section>
-    <section>
-      <div class="first-card">
-        <h2 class="text-center title-2">Portafolio</h2>
-        <hr>
-
-        <div class="img-portafolio1"></div>
-        <div class="img-portafolio2"></div>
-        <div class="img-portafolio3"></div>
-        <div class="img-portafolio4"></div>
-        <div class="img-portafolio5"></div>
-        <div class="img-portafolio6"></div>
+      <div class=" col- display-flex-sk">
+        <div class="padding-col rail percentage-rail2">
+          <p>Leadership</p>
+        </div>
+        <p class="display-flex-sk"> 90%</p>
       </div>
-    </section>
+      <div class=" col- display-flex-sk">
+        <div class="padding-col rail percentage-rail3">
+          <p>Confidence </p>
+        </div>
+        <p class="display-flex-sk"> 90%</p>
+      </div>
 
-    <div class="footer">
-      <p>
-        <i class="far fa-copyright text-center"></i>
-        All rights reserved
-      </p>
+      <hr>
+      <h2 class=" title-3 margin-card"><i class="fas fa-laptop-code"></i> Code skills</h2>
+      <hr>
+
+      <div class="col- display-flex-sk">
+        <div class="padding-col rail percentage-rail4">
+          <p>HTML </p>
+        </div>
+        <p class="display-flex-sk"> 96%</p>
+      </div>
+      <div class="col- display-flex-sk">
+        <div class="padding-col rail percentage-rail5">
+          <p>Javascript</p>
+        </div>
+        <p class="display-flex-sk"> 75%</p>
+      </div>
+      <div class="col- display-flex-sk">
+        <div class="padding-col rail percentage-rail6">
+          <p>Phyton</p>
+        </div>
+        <p class="display-flex-sk"> 80%</p>
+      </div>
 
     </div>
+  </section>
+  <section>
+    <div class="first-card">
+      <h2 class="text-center title-2">Portafolio</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <div class="padding-col img-portafolio1"></div>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="padding-col img-portafolio2"></div>
+        </div>
+
+        <div class="col-md-6 col-12">
+          <div class="padding-col img-portafolio3"></div>
+        </div>
+
+        <div class="col-md-6 col-12">
+          <div class="padding-col img-portafolio4"></div>
+        </div>
+
+        <div class="col-md-6 col-12">
+          <div class="padding-col img-portafolio5"></div>
+        </div>
+
+        <div class="col-md-6 col-12">
+          <div class="padding-col img-portafolio6"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <div class="footer">
+   
+    
+    <div class="df">
+      <a class="stl-link" href="#"><div class="icon"><i class="fab fa-facebook-f"></i></div></a>
+      <a class="stl-link margin-f" href="#"><div class="icon"><i class="fab fa-instagram"></i></i></div></a>
+      <a class="stl-link margin-f" href="#"><div class="icon"><i class="fab fa-youtube"></i></div></a>
+    </div>
+    <div class="margin-c">
+      <p> &copy; All rights reserved</p>
+     </div>
+
+    
+
+  </div>
 </body>
 
 </html>
